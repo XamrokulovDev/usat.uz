@@ -23,7 +23,8 @@ const About = () => {
             <a href="https://admission.usat.uz/" target="_blank"><button className="btn-hover text-[#00274C] border-2 border-[#FFCB05] bg-[#FFCB05] hover:bg-transparent hover:text-[#FFCB05] rounded-3xl font-bold py-3 px-8">{t('menu.swiper-btn1')}</button></a>
         </div>
     </div>
-    <div className="about_card relative grid grid-cols-4 gap-10 my-[20vh] max-md:grid-cols-1 max-xl:grid-cols-2" id="applicants">
+      <h1 className="mb-[12vh] text-[#001930] text-center text-4xl font-bold">{t('menu.about-9')}</h1>
+    <div className="about_card relative grid grid-cols-4 gap-10 max-md:grid-cols-1 max-xl:grid-cols-2 mb-[20vh]" id="applicants">
         {
             about?.map((item,index)=>(
                 <div key={item.id} className={`bg-about-${index+1} btn-hover card about_bg rounded-[50px] relative cursor-pointer`}>

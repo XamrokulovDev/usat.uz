@@ -28,7 +28,7 @@ const SwiperVertical = () => {
       pagination={pagination}
       mousewheel={false}
       modules={[Pagination, Mousewheel, Autoplay]}
-      className="mySwiper overflow-hidden absolute top-[-10vh] max-md:top-[-20vh] max-lg:top-[-20vh]"
+      className="mySwiper overflow-hidden absolute top-[0] max-md:top-[-12vh] max-lg:top-[-15vh]"
     >
 
 
@@ -39,8 +39,8 @@ const SwiperVertical = () => {
             {t('menu.swiper-5')}
           </p>
           <div className="flex items-center gap-5 max-lg:gap-2">
-            <a href="https://admission.usat.uz/" target="_blank"><button className="btn max-lg:p-2 max-md:text-[7px] max-lg:text-[11px] max-2xl:text-[12px] max-lg:font-normal">{t('menu.swiper-btn1')}</button></a>
-            <a href="https://admission.usat.uz/" target="_blank"><button className="btn max-lg:p-2 max-md:text-[7px] max-lg:text-[11px] max-2xl:text-[12px] max-lg:font-normal">{t('menu.swiper-btn2')}</button></a>
+            <a href="https://admission.usat.uz/" target="_blank"><button className="btn max-lg:p-2 max-md:text-[6px] max-lg:text-[11px] max-2xl:text-[12px] max-lg:font-normal">{t('menu.swiper-btn1')}</button></a>
+            <a href="https://admission.usat.uz/" target="_blank"><button className="btn max-lg:p-2 max-md:text-[6px] max-lg:text-[11px] max-2xl:text-[12px] max-lg:font-normal">{t('menu.swiper-btn2')}</button></a>
           </div>
         </div>
         {/* 4x card  */}
@@ -74,8 +74,8 @@ const SwiperVertical = () => {
           {t('menu.swiper-8')}
           </p>
           <div className="flex items-center gap-5 max-lg:gap-2">
-          <a href="https://admission.usat.uz/" target="_blank"><button className="btn max-lg:p-2 max-md:text-[7px] max-lg:text-[11px] max-2xl:text-[12px] max-lg:font-normal">{t('menu.swiper-btn1')}</button></a>
-            <a href="https://admission.usat.uz/" target="_blank"><button className="btn max-lg:p-2 max-md:text-[7px] max-lg:text-[11px] max-2xl:text-[12px] max-lg:font-normal">{t('menu.swiper-btn2')}</button></a>
+          <a href="https://admission.usat.uz/" target="_blank"><button className="btn max-lg:p-2 max-md:text-[6px] max-lg:text-[11px] max-2xl:text-[12px] max-lg:font-normal">{t('menu.swiper-btn1')}</button></a>
+            <a href="https://admission.usat.uz/" target="_blank"><button className="btn max-lg:p-2 max-md:text-[6px] max-lg:text-[11px] max-2xl:text-[12px] max-lg:font-normal">{t('menu.swiper-btn2')}</button></a>
           </div>
         </div>
         {/* 4x card  */}
@@ -105,8 +105,8 @@ const SwiperVertical = () => {
           {t('menu.swiper-10')}
           </p>
           <div className="flex items-center gap-5 max-lg:gap-2">
-            <a href="https://admission.usat.uz/" target="_blank"><button className="btn max-lg:p-2 max-md:text-[7px] max-lg:text-[12px] max-2xl:text-[12px] max-lg:font-normal">{t('menu.swiper-btn1')}</button></a>
-            <a href="https://admission.usat.uz/" target="_blank"><button className="btn max-lg:p-2 max-md:text-[7px] max-lg:text-[12px] max-2xl:text-[12px] max-lg:font-normal">{t('menu.swiper-btn2')}</button></a>
+            <a href="https://admission.usat.uz/" target="_blank"><button className="btn max-lg:p-2 max-md:text-[6px] max-lg:text-[12px] max-2xl:text-[12px] max-lg:font-normal">{t('menu.swiper-btn1')}</button></a>
+            <a href="https://admission.usat.uz/" target="_blank"><button className="btn max-lg:p-2 max-md:text-[6px] max-lg:text-[12px] max-2xl:text-[12px] max-lg:font-normal">{t('menu.swiper-btn2')}</button></a>
           </div>
         </div>
         {/* 4x card  */}

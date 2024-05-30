@@ -31,7 +31,7 @@ const News = () => {
   };
 
   return (
-    <div className="news-content">
+    <div className="news-content mt-[20vh] my-[10vh]">
       <div className="container img-content my-[5vh] relative">
         <div className="news_ w-[35vw] absolute top-[100px] left-[75px] max-xl:hidden">
           <h1 className="text-[#FFFFFF] text-3xl font-medium">
@@ -49,7 +49,7 @@ const News = () => {
       <div className="news-information container flex flex-col gap-10 my-[5vh]">
         {
           news?.map((item, index) => (
-            <div key={index + 1} className="card flex justify-between items-center gap-10 max-lg:flex-col relative">
+            <NavLink to="/newsOpen" onClick={() => setState(item)}><div key={index + 1} className="card flex justify-between items-center gap-10 max-lg:flex-col relative">
               <div className="card_img w-[30%] h-[35vh] max-lg:w-full rounded-[35px] overflow-hidden">
                 <img className="w-full h-full object-cover" src={item.image} alt={
                   i18n.language === "uz"
@@ -88,7 +88,7 @@ const News = () => {
                   </NavLink>
                 </div>
               </div>
-            </div>
+            </div></NavLink>
           ))
         }
       </div>

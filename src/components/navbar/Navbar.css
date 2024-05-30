@@ -1,5 +1,5 @@
-nav {
-    background-image: url("../../assets/bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
 }

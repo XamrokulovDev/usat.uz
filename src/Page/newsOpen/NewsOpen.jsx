@@ -11,7 +11,7 @@ const NewsOpen = ({ state }) => {
   };
 
   return (
-    <div className='container my-10'>
+    <div className='container mt-[20vh] my-[10vh]'>
       <h1 className='my-5 text-[#001930] text-3xl font-semibold mb-10'>
         {
           i18n.language === "uz"

@@ -9,7 +9,7 @@ const Home = () => {
       <div className="h-[70vh] w-[80vw] max-sm:w-[100vw] mx-auto max-lg:px-1 relative">
       <SwiperVertical/>
       </div>
-      <main className="container z-50 mt-[25vh] max-lg:mt-0">
+      <main className="container z-50 mt-[35vh] max-md:mt-[15vh] max-lg:mt-0">
         <Main/>
       </main>
     </div>

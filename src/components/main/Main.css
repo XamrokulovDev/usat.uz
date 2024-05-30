@@ -171,6 +171,20 @@
     background-size: cover;
 }
 
+.card_hover:hover {
+    transition: all 0.3s linear;
+}
+
+.card_hover:hover .main_card_body {
+    display: none !important;
+}
+.card_hover:hover .swiper_card_body {
+    display: none !important;
+}
+.card_hover:hover .contract {
+    display: block !important;
+}
+
 @media (min-width: 0px) and (max-width: 320px) {
     .text-slice {
         font-size: 10px;
