@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 // import navlink 
 import { NavLink } from "react-router-dom";
 
-// import hamburger 
+// import hamburgers 
 import Hamburger from "hamburger-react";
 
 // import images 
