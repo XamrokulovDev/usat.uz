@@ -3,3 +3,30 @@
     top: 0;
     left: 0;
 }
+
+@media (min-width: 0px) and (max-width: 320px) {
+    .menu_link {
+        padding-top: 10px !important;
+    }
+    .menu {
+        font-size: 20px !important;
+        margin: 0 !important;
+    }
+    .nav-call {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 475px) {
+    .menu_link {
+        padding-top: 10px !important;
+    }
+    .menu {
+        gap: 10px;
+        font-size: 30px !important;
+        margin: 0 !important;
+    }
+    .nav-call {
+        font-size: 20px !important;
+    }
+}

@@ -1,14 +1,30 @@
+// import css 
 import "./Navbar.css";
+
+// import useState anf useEffect 
 import { useState, useEffect } from "react";
+
+// import navlink 
+import { NavLink } from "react-router-dom";
+
+// import hamburger 
 import Hamburger from "hamburger-react";
+
+// import images 
 import Logo from "../../assets/navbarLogo.svg";
+
+// import i18next
+import { useTranslation } from "react-i18next";
+
+// import useTranslation 
+import Translation from "../translation/Translation";
+
+// import icons 
 import { IoCall } from "react-icons/io5";
 import { FaTelegramPlane, FaRegUser } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebookF } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import Translation from "../translation/Translation";
+import { GoArrowRight } from "react-icons/go";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -51,6 +67,10 @@ const Navbar = () => {
               <a href="https://t.me/usatuzb" target="_blank"><FaTelegramPlane className="text-xl" /></a>
               <a href="https://instagram.com/usatuz" target="_blank"><RiInstagramFill className="text-xl" /></a>
               <a href="https://www.facebook.com/usatuz" target="_blank"><FaFacebookF className="text-xl" /></a>
+              <div className="ariza flex items-center gap-2 border-b py-1">
+                <a className="text-sm" href="">{t('menu.swiper-btn2')}</a>
+                <a href=""><GoArrowRight className="text-lg"/></a>
+              </div>
             </div>
           </div>
           <ul className="flex items-center gap-5 uppercase">
@@ -104,8 +124,12 @@ const Navbar = () => {
               <li><NavLink to="/news">{t('menu.li-4')}</NavLink></li>
               <li><a href="https://telegra.ph/Kop-soraladigan-savollarga-javoblar-07-25">{t('menu.li-5')}</a></li>
               <li><a href="https://t.me/usat_admins" target>{t('menu.li-6')}</a></li>
+              <li className="flex items-center gap-2">
+                <a className="" href="">{t('menu.swiper-btn2')}</a>
+                <a href=""><GoArrowRight className="text-3xl"/></a>
+              </li>
             </ul>
-            <div className="nav-call flex items-center justify-center gap-10 max-sm:gap-3 min-lg:gap-5 text-[#FFFFFF] text-xl max-lg:text-2xl my-10 max-sm:my-2 max-sm:flex-col">
+            <div className="nav-call flex items-center justify-center gap-10 max-sm:gap-3 min-lg:gap-5 text-[#FFFFFF] text-xl max-md:text-xl max-lg:text-2xl my-10 max-sm:my-2 max-sm:flex-col">
               <a
                 className="call-number flex items-center gap-2"
                 href="tel:+998712007677"
