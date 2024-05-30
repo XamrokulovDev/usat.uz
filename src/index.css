@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+
+.btn-hover {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.toggle_container {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .menu{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .toggle_container{
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+}

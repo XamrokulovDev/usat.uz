@@ -1,0 +1,208 @@
+.bg_img:nth-child(1){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/8.jpg");
+    border-radius: 150px 0 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: bottom right;
+}
+.bg_img:nth-child(2){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: left right;
+}
+.bg_img:nth-child(3){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/12.jpg");
+    border-radius: 0 150px 0 0 ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: left bottom;
+}
+.bg_img:nth-child(4){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: left right;
+}
+.bg_img:nth-child(5){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/9.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: left right;
+}
+.bg_img:nth-child(6){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: left right;
+}
+.bg_img:nth-child(7){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: left right;
+}
+.bg_img:nth-child(8){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/11.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: left right;
+}
+.bg_img:nth-child(9){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/10.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: left right;
+}
+.bg_img:nth-child(10){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/4.jpg");
+    border-radius: 0 0 0 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: right top;
+}
+.bg_img:nth-child(11){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: left right;
+}
+.bg_img:nth-child(12){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/7.jpg");
+    border-radius: 0 0 150px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: left top;
+}
+.card_hover {
+    transition: all 0.3s linear;
+}
+.card_hover:hover {
+    transform: scale(1.05);
+}
+
+.bg_img1 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg_img1:nth-child(1){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_img1:nth-child(2){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_img1:nth-child(3){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/12.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_img1:nth-child(4){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_img1:nth-child(5){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/9.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_img1:nth-child(6){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_img1:nth-child(7){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_img1:nth-child(8){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/11.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_img1:nth-child(9){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/10.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_img1:nth-child(10){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_img1:nth-child(11){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_img1:nth-child(12){
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  url("../../assets/background-img/7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+    .text-slice {
+        font-size: 10px;
+    }
+    .h1-text-slice {
+        font-size: 20px;
+    }
+    .btn_container {
+        font-size: 12px;
+    } 
+}
+
+@media (min-width: 768px) {
+    .text-slice {
+        font-size: 25px;
+    }
+    .h1-text-slice {
+        font-size: 50px;
+    }
+    .btn_container {
+        font-size: 18px;
+    } 
+}
+@media (max-width:1280px) {
+    .main_card_body h1 {
+        font-size: 20px;
+    }
+    .main_card_body p {
+        font-size: 15px;
+    }
+    .main_card_body button {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+}

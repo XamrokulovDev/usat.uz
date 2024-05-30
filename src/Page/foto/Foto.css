@@ -1,0 +1,137 @@
+.container-foto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 10vh;
+    gap: 20px; 
+}
+
+.foto-card-1 {
+    grid-row: span 5; 
+}
+.foto-card-2 {
+    margin-top: 10rem;
+    grid-row: span 6;
+}
+.foto-card-3 {
+    margin-top: 14rem;
+    grid-row: span 5;
+}
+.foto-card-4 {
+    margin-top: 3rem;
+    grid-row: span 5; 
+}
+.foto-card-5 {
+    grid-row: span 3; 
+}
+.foto-card-6 {
+    grid-row: span 6;
+}
+.foto-card-7 {
+    grid-row: span 3;
+}
+.foto-card-8 {
+    grid-row: span 2;
+}
+.foto-card-9 {
+    grid-row: span 5; 
+}
+.foto-card-10 {
+    grid-row: span 5; 
+}
+.foto-card-11 {
+    grid-row: span 3; 
+}
+.foto-card-12 {
+    grid-column: span 2;
+    grid-row: span 2; 
+}
+.polygon_hover {
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.polygon_hover:hover {
+    transform: scale(1.08);
+}
+.shadow-hover {
+    transition: all 0.3s linear;
+}
+.shadow-hover:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.021),75%,#ffcd05d2);
+}
+
+@media (max-width: 768px) {
+    .container-foto {
+        width: 90vw;
+        grid-template-columns: 1fr; 
+        grid-auto-rows: 33vh; 
+    }
+    .foto-card-1,
+    .foto-card-2,
+    .foto-card-3,
+    .foto-card-4,
+    .foto-card-5,
+    .foto-card-6,
+    .foto-card-7,
+    .foto-card-8,
+    .foto-card-9,
+    .foto-card-10,
+    .foto-card-11,
+    .foto-card-12 {
+        grid-row: span 2;
+    }
+    .foto-card-2,
+    .foto-card-3,
+    .foto-card-4{
+        margin: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+    .container-foto {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 4vh;
+        gap: 5px; 
+    }
+    .foto-card-2 {
+        margin-top: 5rem;
+        grid-row: span 6;
+    }
+    .foto-card-3 {
+        margin-top: 8rem;
+        grid-row: span 5;
+    }
+    .foto-card-4 {
+        margin-top: 1rem;
+        grid-row: span 5; 
+    }
+    .foto-card {
+        border-radius: 5px;
+    }
+    .foto-h {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1400px) {
+    .container-foto {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 8vh;
+        gap: 15px; 
+    }
+    .foto-card-2 {
+        margin-top: 6rem;
+        grid-row: span 6;
+    }
+    .foto-card-3 {
+        margin-top: 8rem;
+        grid-row: span 5;
+    }
+    .foto-card-4 {
+        margin-top: 1rem;
+        grid-row: span 5; 
+    }
+    .foto-card {
+        border-radius: 5px;
+    }
+}
