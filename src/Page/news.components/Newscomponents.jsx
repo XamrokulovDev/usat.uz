@@ -16,7 +16,7 @@ const Newscomponents = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://usatadmin.pythonanywhere.com/api/v1/news/');
+                const response = await axios.get('https://usatsite.pythonanywhere.com/api/v1/news/');
                 const firstItem = response.data.results;
                 setNews(firstItem);
             } catch (error) {
@@ -48,25 +48,20 @@ const Newscomponents = () => {
                     <div className="news_text w-[40%] flex flex-col gap-5 max-lg:w-[100%]">
                         {
                             news?.slice(0, 3).map((item) => (
-                                <div key={item.id} className="news_card flex items-center gap-5 max-sm:flex-col">
+                                <NavLink to="/news"><div key={item.id} className="news_card flex items-center gap-5 max-sm:flex-col">
                                     <div className="news_card_img w-[40%] h-[25vh] max-md:w-full rounded-3xl overflow-hidden">
                                         <img className="w-full h-full object-cover" src={item.image} alt="" />
                                     </div>
                                     <div className="news_card_body w-[60%] max-md:w-full">
-                                        <h1 className="text-[#001930] text-xl">{i18n.language === "uz"
+                                        <h1 className="text-[#001930] text-2xl font-semibold">{i18n.language === "uz"
                                             ? item.title_uz
                                             : i18n.language === "ru"
-                                                ? item.title_ru
-                                                : item.title_en}</h1>
-                                        <div className="flex justify-between items-center">
-                                            <NavLink to="/news" className="text-[#FFCB05] flex gap-3 items-center my-3">
-                                                <span className="text-lg" href="#">{t('menu.news-3')}</span>
-                                                <FiArrowRight />
-                                            </NavLink>
-                                            <NavLink to="/news" className="text-[#FFCB05] text-2xl mb-3">...</NavLink>
-                                        </div>
+                                            ? item.title_ru
+                                            : item.title_en}
+                                        </h1>
                                     </div>
                                 </div>
+                                </NavLink>
                             ))
                         }
                     </div>

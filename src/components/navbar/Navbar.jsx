@@ -24,7 +24,6 @@ import { IoCall } from "react-icons/io5";
 import { FaTelegramPlane, FaRegUser } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebookF } from "react-icons/fa";
-import { GoArrowRight } from "react-icons/go";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -54,7 +53,7 @@ const Navbar = () => {
             <img src={Logo} alt="University Logo" className="w-full" />
           </div>
         </NavLink>
-        <div className="navbar-nav text-white flex flex-col justify-center items-center gap-5">
+        <div className="navbar-nav text-white flex flex-col justify-center items-center gap-2">
           <div className="nav-call flex items-center gap-10">
             <a
               className="call-number flex items-center gap-2"
@@ -67,12 +66,11 @@ const Navbar = () => {
               <a href="https://t.me/usatuzb" target="_blank"><FaTelegramPlane className="text-xl" /></a>
               <a href="https://instagram.com/usatuz" target="_blank"><RiInstagramFill className="text-xl" /></a>
               <a href="https://www.facebook.com/usatuz" target="_blank"><FaFacebookF className="text-xl" /></a>
-              <div className="ariza flex items-center gap-2 border-b py-1">
-                <a className="text-sm" href="">{t('menu.swiper-btn2')}</a>
-                <a href=""><GoArrowRight className="text-lg"/></a>
-              </div>
             </div>
           </div>
+          <a href="https://admission.usat.uz/" target="_blank" className="w-[50%]">
+            <button className={`bg-[#FFCB05] w-full py-1.5 rounded-3xl ${location.pathname !== "/" ? 'text-[#00274C]' : scrolled ? 'text-[#FFFFFF]' : ''}`}>{t('menu.swiper-btn3')}</button>
+          </a>
           <ul className="flex items-center gap-5 uppercase">
             <li>
               <NavLink to="/">{t('menu.li-1')}</NavLink>
@@ -98,14 +96,6 @@ const Navbar = () => {
           <div className="translation mb-3">
             <Translation />
           </div>
-          <div className="profile text-white flex items-center flex-col gap-2">
-            <a href="https://admission.usat.uz/" target="_blank">
-              <FaRegUser className="text-2xl" />
-            </a>
-            <a href="https://admission.usat.uz/" target="_blank">
-              <span>{t('menu.profil')}</span>
-            </a>
-          </div>
         </div>
       </div>
       {/* Mobile device navbar  */}
@@ -124,9 +114,10 @@ const Navbar = () => {
               <li><NavLink to="/news">{t('menu.li-4')}</NavLink></li>
               <li><a href="https://telegra.ph/Kop-soraladigan-savollarga-javoblar-07-25">{t('menu.li-5')}</a></li>
               <li><a href="https://t.me/usat_admins" target>{t('menu.li-6')}</a></li>
-              <li className="flex items-center gap-2">
-                <a className="" href="">{t('menu.swiper-btn2')}</a>
-                <a href=""><GoArrowRight className="text-3xl"/></a>
+              <li>
+              <NavLink className="w-[50%]">
+                <button className={`learn-btn w-full py-1.5`}>{t('menu.swiper-btn3')}</button>
+              </NavLink>
               </li>
             </ul>
             <div className="nav-call flex items-center justify-center gap-10 max-sm:gap-3 min-lg:gap-5 text-[#FFFFFF] text-xl max-md:text-xl max-lg:text-2xl my-10 max-sm:my-2 max-sm:flex-col">
@@ -146,12 +137,13 @@ const Navbar = () => {
           </div>
           {/* Menu Login */}
           <div className="profile text-white flex items-center gap-2 z-50">
-            <div className="translation">
+            <div className="translation flex justify-between items-center max-md:gap-3 max-lg:gap-[8vw]">
+            <a href="https://admission.usat.uz/" target="_blank" className="bg-[#FFCB05] flex flex-col max-md:px-2 max-lg:px-10 min-lg:py-1 rounded-xl">
+              <button className={`learn-btn max-md:text-[11px] max-lg:text-[13px] w-full border-b`}>{t('menu.swiper-btn4')}</button>
+              <button className={`learn-btn max-md:text-[11px] max-md:text-[13px] w-full`}>{t('menu.swiper-btn5')}</button>
+            </a>
               <Translation />
             </div>
-            <a href="https://admission.usat.uz/" target="_blank">
-              <FaRegUser className="text-2xl" />
-            </a>
           </div>
           {/* hamburger  */}
           <div className="toggle text-[#FFFFFF]">

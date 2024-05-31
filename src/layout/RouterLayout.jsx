@@ -9,7 +9,7 @@ const RouterLayout = () => {
         <Navbar/>
     </header>
     <main>
-        <Outlet/>
+        <Outlet />
     </main>
     <footer>
       <Footer/>

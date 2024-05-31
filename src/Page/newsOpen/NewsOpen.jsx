@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 import DOMPurify from "dompurify";
+import { useLocation } from 'react-router-dom';
 
 const NewsOpen = ({ state }) => {
   const { i18n } = useTranslation();
+  const location = useLocation();
 
   const stripHtml = (html) => {
     const doc = new DOMParser().parseFromString(DOMPurify.sanitize(html), 'text/html');
     return doc.body.textContent || "";
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <div className='container mt-[20vh] my-[10vh]'>

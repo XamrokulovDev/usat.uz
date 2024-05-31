@@ -5,7 +5,6 @@ import Home from './Page/home/Home'
 import { about,directions} from '../data/data'
 import News from './Page/news/News'
 import Foto from './Page/foto/Foto'
-import NotFound from './Page/notFound/NotFound'
 import NewsOpen from './Page/newsOpen/NewsOpen'
 import { useState } from 'react'
 
@@ -33,10 +32,6 @@ const App = () => {
         {
           path:"/newsOpen",
           element:<NewsOpen state={state}/>
-        },
-        {
-          path:"*",
-          element:<NotFound/>
         }
       ]
     }

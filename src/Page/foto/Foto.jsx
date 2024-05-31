@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react"
 
+// import uselocation 
+import { useLocation } from "react-router-dom";
+
 // import css 
 import "./Foto.css"
 
@@ -11,11 +14,13 @@ import { useTranslation } from "react-i18next";
 const Foto = () => {
   const [galery, setGalery] = useState([]);
   const {t,i18n}=useTranslation();
+  const location = useLocation();
+
   
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://usatadmin.pythonanywhere.com/api/v1/galleries/');
+        const response = await axios.get('https://usatsite.pythonanywhere.com/api/v1/galleries/');
         setGalery(response.data.slice(0, 12));
       } catch (error) {
         console.error('Error fetching the data', error);
@@ -24,6 +29,12 @@ const Foto = () => {
   
     fetchData();
   }, []);
+
+   // Scroll to top on route change
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <div className="w-[80vw] m-auto container-foto my-[10vh] relative text-center my-[25vh]">
       <span className=" foto-position absolute top-0 left-[40rem] max-xl:left-[16rem] max-xl:top-[-3rem] max-2xl:left-[26rem] max-2xl:top-[-2rem] max-md:hidden">

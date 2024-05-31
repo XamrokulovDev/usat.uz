@@ -3,7 +3,7 @@ import img from "../../assets/news-img.svg";
 import { GoArrowRight } from "react-icons/go";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import DOMPurify from "dompurify";
 import { UserContext } from "../../context/Context";
 
@@ -11,11 +11,12 @@ const News = () => {
   const { setState } = useContext(UserContext);
   const { t, i18n } = useTranslation();
   const [news, setNews] = useState([]);
+  const location = useLocation();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://usatadmin.pythonanywhere.com/api/v1/news/');
+        const response = await axios.get('https://usatsite.pythonanywhere.com/api/v1/news/');
         setNews(response.data.results);
       } catch (error) {
         console.error(error);
@@ -24,6 +25,10 @@ const News = () => {
 
     fetchData();
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   const stripHtml = (html) => {
     const doc = new DOMParser().parseFromString(DOMPurify.sanitize(html), 'text/html');
@@ -74,19 +79,6 @@ const News = () => {
                       ? stripHtml(item.description_ru).slice(0, 350)
                       : stripHtml(item.description_en).slice(0, 450)}...
                 </p>
-                <div className="buttons w-full flex justify-between items-center">
-                  <NavLink to="/newsOpen" onClick={() => setState(item)}>
-                    <button className="text-[#FFCB05] flex items-center gap-4 ">
-                      <p className="text-lg">{t('menu.news-3')}</p>
-                      <GoArrowRight className="text-lg" />
-                    </button>
-                  </NavLink>
-                  <NavLink to="/newsOpen" onClick={() => setState(item)}>
-                    <button className="text-[#FFCB05]">
-                      <p className="mb-2 text-4xl">...</p>
-                    </button>
-                  </NavLink>
-                </div>
               </div>
             </div></NavLink>
           ))

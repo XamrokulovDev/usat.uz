@@ -27,6 +27,10 @@ i18n
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
+    backend: {
+      // translation files path
+      loadPath: '/locales/{{lng}}/translation.json',
+    }
   });
 
 export default i18n;

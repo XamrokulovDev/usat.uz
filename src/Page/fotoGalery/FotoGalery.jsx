@@ -1,4 +1,9 @@
 import { useState, useEffect } from "react"
+
+// import uselocation 
+import { useLocation } from "react-router-dom";
+
+// import css 
 import "./FotoGalery.css"
 
 // import icons 
@@ -22,11 +27,12 @@ import { useTranslation } from "react-i18next";
 const FotoGalery = () => {
   const [galery, setGalery] = useState([]);
   const { t, i18n } = useTranslation();
+  const location = useLocation();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://usatadmin.pythonanywhere.com/api/v1/galleries/');
+        const response = await axios.get('https://usatsite.pythonanywhere.com/api/v1/galleries/');
         setGalery(response.data.slice(0, 11));
       } catch (error) {
         console.error('Error fetching the data', error);
@@ -35,6 +41,10 @@ const FotoGalery = () => {
 
     fetchData();
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <div className="text-center">

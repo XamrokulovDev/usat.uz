@@ -6,7 +6,7 @@
 
 @media (min-width: 0px) and (max-width: 320px) {
     .menu_link {
-        padding-top: 10px !important;
+        padding-top: 50px !important;
     }
     .menu {
         font-size: 20px !important;
@@ -15,15 +15,18 @@
     .nav-call {
         font-size: 16px !important;
     }
+    .learn-btn {
+        font-size: 10px !important;
+    }
 }
 
-@media (min-width: 320px) and (max-width: 475px) {
+@media (min-width: 321px) and (max-width: 475px) {
     .menu_link {
         padding-top: 10px !important;
     }
     .menu {
         gap: 10px;
-        font-size: 30px !important;
+        font-size: 25px !important;
         margin: 0 !important;
     }
     .nav-call {

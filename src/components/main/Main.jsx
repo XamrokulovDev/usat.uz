@@ -82,7 +82,7 @@ const Main = () => {
                     </div>
                 </div>
                 {/* Mobile responsive Swiper !  */}
-                <div className="swiper hidden max-lg:block">
+                <div className="swiper hidden max-lg:block mt-[5vh]">
     {directions && (
         <Swiper
             spaceBetween={30}
