@@ -185,9 +185,13 @@
     display: block !important;
 }
 
-@media (min-width: 0px) and (max-width: 320px) {
+.mySwiper_2 {
+    height: 65vh !important;
+}
+
+@media (min-width: 0px) and (max-width: 321px) {
     .text-slice {
-        font-size: 10px;
+        font-size: 13px;
     }
     .h1-text-slice {
         font-size: 20px;
@@ -195,18 +199,60 @@
     .btn_container {
         font-size: 12px;
     } 
+    .contract h1 {
+        font-size: 16px !important;
+    }
+    .contract p {
+        font-size: 10px !important;
+    }
+    .mySwiper_2 {
+        border-radius: 20px;
+        height: 65vh !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 475px) {
+    .mySwiper_2 {
+        height: 60vh !important;
+        border-radius: 25px;
+    }
+    .contract h1 {
+        font-size: 25px !important;
+    }
+    .contract p {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 475px) and (max-width: 768px) {
+    .mySwiper_2 {
+        height: 60vh !important;
+        border-radius: 30px;
+    }
+    .contract h1 {
+        font-size: 30px !important;
+    }
+    .contract p {
+        font-size: 18px !important;
+    }
 }
 
 @media (min-width: 768px) {
     .text-slice {
-        font-size: 25px;
+        font-size: 28px;
     }
     .h1-text-slice {
-        font-size: 50px;
+        line-height: 2.5;
+        padding: 20px 0 !important;
+        font-size: 40px !important;
     }
     .btn_container {
         font-size: 18px;
     } 
+    .mySwiper_2 {
+        height: 65vh !important;
+        border-radius: 35px;
+    }
 }
 @media (max-width:1280px) {
     .main_card_body h1 {

@@ -92,19 +92,19 @@ const Main = () => {
                 disableOnInteraction: false,
             }}
             pagination={{
-                clickable: true,
+                type: 'progressbar',
             }}
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper h-[100vh]"
+            className="mySwiper_2"
         >
             {directions.map((item) => (
-                <SwiperSlide key={item.id} className="card_hover w-full h- bg_img1 flex flex-col items-center justify-center rounded-[50px]">
-                    <div key={item.id} className="card_img w-[16vw] py-2">
+                <SwiperSlide key={item.id} className="card_hover w-full bg_img1 flex flex-col items-center justify-center overflow-hidden z-50">
+                    <div key={item.id} className="card_img w-[16vw] py-2 z-40 max-lg:pt-[5vh] max-sm:pt-[0]">
                         <img src={item.img} alt="" />
                     </div>
-                    <div className={`swiper_card_body text-[#FFFFFF] flex flex-col justify-between items-center px-4 text-center gap-2`}>
-                        <h1 className="h1-text-slice font-medium text-2xl py-1">
+                    <div className={`swiper_card_body text-[#FFFFFF] flex flex-col justify-between items-center px-[10vw] text-center gap-2`}>
+                        <h1 className="h1-text-slice font-medium text-2xl py-1 text-[#FFCB05]">
                             {i18n.language === "uz" ? item.text_uz : i18n.language === "ru" ? item.text_ru : item.text_en}
                         </h1>
                         <p className="text-slice text-md">
@@ -115,8 +115,8 @@ const Main = () => {
                             </a>
                         </div>
                     </div>
-                    <div className={`contract text-[#FFFFFF] text-center py-2 pb-5 hidden`}>
-                        <h1 className="text-[#FFCB05] font-semibold text-2xl py-3">
+                    <div className={`contract text-[#FFFFFF] text-center py-2 pb-5 max-md:pb-0 hidden`}>
+                        <h1 className="text-[#FFCB05] font-semibold text-2xl py-3 max-md:py-1">
                             {i18n.language === "uz" ? item.name_uz : i18n.language === "ru" ? item.name_ru : item.name_en}
                         </h1>
                         <p className="text-xl font-medium py-1">

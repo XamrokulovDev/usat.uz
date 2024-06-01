@@ -137,11 +137,11 @@ const Navbar = () => {
           </div>
           {/* Menu Login */}
           <div className="profile text-white flex items-center gap-2 z-50">
-            <div className="translation flex justify-between items-center max-md:gap-3 max-lg:gap-[8vw]">
-            <a href="https://admission.usat.uz/" target="_blank" className="bg-[#FFCB05] flex flex-col max-md:px-2 max-lg:px-10 min-lg:py-1 rounded-xl">
-              <button className={`learn-btn max-md:text-[11px] max-lg:text-[13px] w-full border-b`}>{t('menu.swiper-btn4')}</button>
-              <button className={`learn-btn max-md:text-[11px] max-md:text-[13px] w-full`}>{t('menu.swiper-btn5')}</button>
-            </a>
+            <div className="translation flex justify-between items-center max-md:gap-1 max-lg:gap-[8vw]">
+            <div className="flex flex-col gap-1 max-md:px-2 max-lg:px-10 min-lg:py-1">
+              <button className={`bg-[#FFCB05] learn-btn max-md:text-[7px] max-lg:text-[13px] w-full rounded-xl py-[3px] px-1`}>{t('menu.swiper-btn4')}</button>
+              <button className={`bg-[#FFCB05] learn-btn max-md:text-[7px] max-lg:text-[13px] w-full rounded-xl py-[3px] px-1`}>{t('menu.swiper-btn5')}</button>
+            </div>
               <Translation />
             </div>
           </div>

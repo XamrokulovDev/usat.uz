@@ -117,7 +117,9 @@ const FotoGalery = () => {
           }
         </div>
       </div>
-      <NavLink to="/foto" className="foto-link text-center bg-[#FFCB05] text-[#00274C] border-[#FFCB05] rounded-3xl py-2 px-4 font-semibold hidden">СМОТРЕТЬ ВСЕ ФОТО</NavLink>
+      <div className="div_2 flex justify-center items-center">
+        <NavLink to="/foto" className="foto-link w-[50%] text-center bg-[#FFCB05] text-[#00274C] border-[#FFCB05] rounded-3xl py-2 px-4 font-semibold hidden">{t('menu.foto-galery-btn')}</NavLink>
+      </div>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -127,17 +129,19 @@ const FotoGalery = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper mb-[20vh] hidden"
+        className="mySwiper_3 max-lg:h-[60vh] mb-[15vh] hidden mt-[5vh]"
       >
         {galery.map((item, index) => (
-          <SwiperSlide key={index + 1} className="w-full h-full rounded-[35px] overflow-hidden">
-            <img className="w-full h-full object-cover" src={item.image} alt={i18n.language === "uz"
-              ? item.title_uz
-              : i18n.language === "ru"
-              ? item.title_ru
-              : item.title_en}
-            />
-          </SwiperSlide>
+          <NavLink>
+            <SwiperSlide key={index + 1} className="w-full h-full rounded-[35px] overflow-hidden">
+              <img className="w-full h-full object-cover" src={item.image} alt={i18n.language === "uz"
+                ? item.title_uz
+                : i18n.language === "ru"
+                ? item.title_ru
+                : item.title_en}
+              />
+            </SwiperSlide>
+          </NavLink>
         ))}
       </Swiper>
     </div>

@@ -1,11 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 import DOMPurify from "dompurify";
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom'; 
+import { UserContext } from '../../context/Context';
 
-const NewsOpen = ({ state }) => {
+const NewsOpen = () => {
   const { i18n } = useTranslation();
-  const location = useLocation();
+  const location = useLocation(); 
+
+  const {id}=useParams()
+  const {news} =useContext(UserContext);
+  const datapage = news.find((item)=>item.id === Number(id))
+  console.log(news);
 
   const stripHtml = (html) => {
     const doc = new DOMParser().parseFromString(DOMPurify.sanitize(html), 'text/html');
@@ -21,25 +27,31 @@ const NewsOpen = ({ state }) => {
       <h1 className='my-5 text-[#001930] text-3xl font-semibold mb-10'>
         {
           i18n.language === "uz"
-          ? state.title_uz
-          : i18n.language === "ru"
-          ? state.title_ru
-          : state.title_en
+            ? datapage.title_uz
+            : i18n.language === "ru"
+            ? datapage.title_ru
+            : datapage.title_en
         }
       </h1>
       <div className="container mx-auto my-10">
         <div className="flex flex-wrap md:flex-nowrap">
           <img 
-            src={state.image} 
-            alt="Descriptive Alt Text" 
+            src={datapage.image} 
+            alt={
+              i18n.language === "uz"
+              ? datapage.title_uz
+              : i18n.language === "ru"
+              ? datapage.title_ru
+              : datapage.title_en
+            }  
             className="float-left w-[60vw] h-[30vh] max-md:w-full max-md:h-[40vh] mr-4 mb-4 w-full md:w-auto md:max-w-xs rounded-3xl max-md:rounded-[35px]"
           />
           <p className="text-base text-justify text-xl">
             {i18n.language === "uz"
-            ? stripHtml(state.description)
-            : i18n.language === "ru"
-            ? stripHtml(state.description_ru)
-            : stripHtml(state.description_en)}
+              ? stripHtml(datapage.description)
+              : i18n.language === "ru"
+              ? stripHtml(datapage.description_ru)
+              : stripHtml(datapage.description_en)}
           </p>
         </div>
       </div>
