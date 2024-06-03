@@ -1,31 +1,19 @@
-import React, { useEffect, useState } from 'react'
-
 import video from "../../video/usat-video.mp4"
 import { NavLink } from 'react-router-dom'
 
 // icons 
-import { FiBookmark, FiArrowRight } from "react-icons/fi";
+import { FiBookmark } from "react-icons/fi";
 
-import axios from "axios";
 import { useTranslation } from 'react-i18next';
+import { useContext } from "react";
+import { UserContext } from "../../context/Context";
 
 
 const Newscomponents = () => {
-    const [news, setNews] = useState([]);
+    const {news}=useContext(UserContext);
     const {t,i18n}=useTranslation();
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get('https://usatsite.pythonanywhere.com/api/v1/news/');
-                const firstItem = response.data.results;
-                setNews(firstItem);
-            } catch (error) {
-                console.error('Error fetching the data', error);
-            }
-        };
-
-        fetchData([]);
-    }, []);
+    console.log(news);
+   
   return (
     <div className="news text-center my-[15vh] max-lg:my-[8vh]">
                 <h1 className="text-4xl text-[#001930] font-bold">{t('menu.about-7')}</h1>
@@ -48,7 +36,7 @@ const Newscomponents = () => {
                     <div className="news_text w-[40%] flex flex-col gap-5 max-lg:w-[100%]">
                         {
                             news?.slice(0, 3).map((item) => (
-                                <NavLink to="/news"><div key={item.id} className="news_card flex items-center gap-5 max-sm:flex-col">
+                                <NavLink to={`/NewsOpen/${item.id}`}><div key={item.id} className="news_card flex items-center gap-5 max-sm:flex-col">
                                     <div className="news_card_img w-[40%] h-[25vh] max-md:w-full rounded-3xl overflow-hidden">
                                         <img className="w-full h-full object-cover" src={item.image} alt="" />
                                     </div>

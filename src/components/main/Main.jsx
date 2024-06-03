@@ -11,12 +11,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/scrollbar';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules'; 
+
+// import i18next 
 import { useTranslation } from "react-i18next";
+
+// import page newscomponents 
 import Newscomponents from "../../Page/news.components/Newscomponents";
+
+// import page partner
 import Partner from "../../Page/partner/Partner";
 
 const Main = () => {
@@ -52,7 +59,7 @@ const Main = () => {
                                         <img className="h-full" src={item.img} alt="" />
                                     </div>
                                     <div className={`main_card_body h-[40vh] text-center flex flex-col gap-5`}>
-                                        <h1 className="text-3xl text-[#FFFFFF] font-bold px-8 max-xl:text-xl">
+                                        <h1 className="text-3xl text-[#FFCB05] font-bold px-8 max-xl:text-xl">
                                             {i18n.language === "uz" ? item.text_uz : i18n.language === "ru" ? item.text_ru : item.text_en}
                                         </h1>
                                         <p className="text-xl text-[#FFFFFF] my-1 px-[3vw]">
@@ -91,11 +98,8 @@ const Main = () => {
                 delay: 2500,
                 disableOnInteraction: false,
             }}
-            pagination={{
-                type: 'progressbar',
-            }}
-            navigation={true}
-            modules={[Autoplay, Pagination, Navigation]}
+              navigation={true}
+              modules={[Pagination, Navigation]}
             className="mySwiper_2"
         >
             {directions.map((item) => (

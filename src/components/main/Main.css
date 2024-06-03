@@ -189,6 +189,20 @@
     height: 65vh !important;
 }
 
+.swiper-button-next::after {
+    padding-left: 10px;
+    width: 30px;
+    height: 40px;
+    color: #FFCB05;
+}
+.swiper-button-prev::after {
+    padding-right: 40px;
+    width: 30px;
+    height: 40px;
+    color: #FFCB05;
+}
+
+
 @media (min-width: 0px) and (max-width: 321px) {
     .text-slice {
         font-size: 13px;

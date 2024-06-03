@@ -8,10 +8,9 @@ const NewsOpen = () => {
   const { i18n } = useTranslation();
   const location = useLocation(); 
 
-  const {id}=useParams()
-  const {news} =useContext(UserContext);
-  const datapage = news.find((item)=>item.id === Number(id))
-  console.log(news);
+  const {id} = useParams();
+  const { news } = useContext(UserContext);
+  const datapage = news.find((item) => item.id === Number(id));
 
   const stripHtml = (html) => {
     const doc = new DOMParser().parseFromString(DOMPurify.sanitize(html), 'text/html');
@@ -21,6 +20,13 @@ const NewsOpen = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
+
+  if (!datapage) {
+    return (
+      <div className='container mt-[20vh] my-[10vh]'>
+      </div>
+    );
+  }
 
   return (
     <div className='container mt-[20vh] my-[10vh]'>

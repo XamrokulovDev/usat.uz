@@ -9,7 +9,6 @@ const News = () => {
   const {news}=useContext(UserContext);
   const { t, i18n } = useTranslation();
   const location = useLocation();
-  console.log(news);
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -60,7 +60,6 @@ const Footer = () => {
         <h1 className="text-[18px] max-xl:text-sm">@<span>{Years}</span> USAT. {t('menu.footer-15')}</h1>
         <div className="absolute top-[-70px] relative border border-[#00274C] rounded-[50%] p-3 bg-[#EBEBEB] cursor-pointer max-md:top-[-5.5rem] z-0">
           <SlArrowUp  className="text-3xl" onClick={() => window.scrollTo(0, 0)}/>
-          <h1 className=" text-xl absolute bottom-[-55px] left-[-0.8rem] max-md:hidden max-xl:text-md" onClick={() => window.scrollTo(0, 0)}>{t('menu.footer-16')}</h1>
         </div>
         <h1 className="text-[18px] max-xl:text-sm">{t('menu.footer-15')}</h1>
     </div>
