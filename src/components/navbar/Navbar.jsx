@@ -21,7 +21,7 @@ import Translation from "../translation/Translation";
 
 // import icons 
 import { IoCall } from "react-icons/io5";
-import { FaTelegramPlane, FaRegUser } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebookF } from "react-icons/fa";
 
@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
           <div className="w-[60%] flex gap-2">
             <a href="https://admission.usat.uz/" target="_blank" className={`bg-[#FFCB05] w-full py-1.5 rounded-3xl px-4`}>{t('menu.swiper-btn4')}</a>
-            <a href="https://test.usat.uz/Test/EnterTest" target="_blank" className={`bg-[#FFCB05] w-full py-1.5 rounded-3xl px-4`}>{t('menu.swiper-btn5')}</a>
+            <a href="https://test.usat.uz/Qabul/EnterTest" target="_blank" className={`bg-[#FFCB05] w-full py-1.5 rounded-3xl px-4`}>{t('menu.swiper-btn5')}</a>
           </div>
           <ul className="flex items-center gap-5 uppercase">
             <li>
@@ -141,7 +141,7 @@ const Navbar = () => {
             <div className="translation flex justify-between items-center max-md:gap-1 max-lg:gap-[8vw]">
             <div className="flex flex-col gap-1 max-md:px-2 max-lg:px-10 min-lg:py-1">
               <a href="https://admission.usat.uz/" target="_blank" className={`bg-[#FFCB05] learn-btn max-md:text-[7px] max-lg:text-[13px] w-full rounded-xl py-[3px] px-1`}>{t('menu.swiper-btn4')}</a>
-              <a href="https://test.usat.uz/Test/EnterTest" target="_blank" className={`bg-[#FFCB05] learn-btn max-md:text-[7px] max-lg:text-[13px] w-full rounded-xl py-[3px] px-1`}>{t('menu.swiper-btn5')}</a>
+              <a href="https://test.usat.uz/Qabul/EnterTest" target="_blank" className={`bg-[#FFCB05] learn-btn max-md:text-[7px] max-lg:text-[13px] w-full rounded-xl py-[3px] px-1`}>{t('menu.swiper-btn5')}</a>
             </div>
               <Translation />
             </div>

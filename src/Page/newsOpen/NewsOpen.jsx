@@ -50,7 +50,7 @@ const NewsOpen = () => {
               ? datapage.title_ru
               : datapage.title_en
             }  
-            className="float-left w-[60vw] h-[30vh] max-md:w-full max-md:h-[40vh] mr-4 mb-4 w-full md:w-auto md:max-w-xs rounded-3xl max-md:rounded-[35px]"
+            className="float-left w-[60vw] h-[30vh] max-md:w-full max-md:h-[40vh] mr-4 mb-4 w-full md:w-auto md:max-w-xs rounded-3xl max-md:rounded-[35px] object-cover"
           />
           <p className="text-base text-justify text-xl">
             {i18n.language === "uz"
