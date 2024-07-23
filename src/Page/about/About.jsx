@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { UserContext } from "../../context/Context"
 // import images 
-import img from "../../assets/About.svg"
+import img from "../../assets/About.webp"
 
 // css 
 import "./About.css"
