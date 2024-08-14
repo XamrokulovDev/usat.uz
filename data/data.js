@@ -499,7 +499,7 @@ export const about = [
   {
     id:1,
     img:".././src/assets/about-1.svg",
-    name_ru:"Международный Диплом",
+    name_ru:"Государственный образец диплома",
     name_uz:"Davlat namunasi diplomi",
     name_en:"State Standard Diploma",
     title_ru:"По окончании учебы студенты получат Диплом международного образца от Британского Университета, который котируется не только в Узбекистане, но и за рубежом",
@@ -509,7 +509,7 @@ export const about = [
   {
     id:2,
     img:".././src/assets/about-2.svg",
-    name_ru:"Развитие «гибких» навыков",
+    name_ru:"Развитие важных навыков",
     name_uz:"Muhim ko'nikmalarni rivojlantirish",
     name_en:"Development of Important Skills",
     title_ru:"Особое внимание уделяется «гибким» навыкам, таким как критическое мышление, тайм-менеджмент, проведение презентаций, принятие решений и другие.",
@@ -519,7 +519,7 @@ export const about = [
   {
     id:3,
     img:".././src/assets/about-3.svg",
-    name_ru:"Гибкая система Стипендий",
+    name_ru:"Современная образовательная система",
     name_uz:"Zamonaviy ta'lim tizimi",
     name_en:"Modern Education System",
     title_ru:"Учредители, партнеры и будущие работодатели предоставляют стипендии, полностью или частично покрывающие стоимость учебы, на основе академических достижений.",
@@ -529,7 +529,7 @@ export const about = [
   {
     id:4,
     img:".././src/assets/about-4.svg",
-    name_ru:"Возможности Нетворкинга",
+    name_ru:"Возможности практики",
     name_uz:"Amaliyot imkoniyatlari",
     name_en:"Internship Opportunities",
     title_ru:"Успешные предприниматели, топ-менеджеры и ведущие эксперты общаются со студентами TEAM посредством семинаров, лекций, мастер-классов, деловых завтраков и других мероприятий.",
